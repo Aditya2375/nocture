@@ -3,7 +3,7 @@
 A concept candle atelier: dark, cinematic storefront where every product sits
 in a lit alcove and opens into a full-screen scene.
 
-**Live:** (link added after first deploy)
+**Live:** https://nocture-ten.vercel.app
 
 ## Stack
 
