@@ -268,9 +268,9 @@ body.ready .hdr { opacity: 1; transform: none; }
   .hdr__nav { gap: 14px; }
   .hdr__nav a, .hdr__bag { font-size: 10px; letter-spacing: .14em; }
 
-  .product__inner { grid-template-columns: 1fr; grid-template-rows: minmax(0, 52vh) 1fr; align-items: start; padding-top: 70px; gap: 20px; overflow-y: auto; }
+  .product__inner { grid-template-columns: 1fr; grid-template-rows: auto 1fr; align-items: start; padding-top: 70px; gap: 20px; overflow-y: auto; }
   .product__stage { order: -1; height: auto; }
-  .niche--product { width: min(56vw, 300px); }
+  .niche--product { width: min(52vw, 260px); }
   .craft { grid-template-columns: 1fr; }
   .shelf { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
   .hero__copy { left: 20px; right: 20px; bottom: 110px; }
