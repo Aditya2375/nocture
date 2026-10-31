@@ -199,6 +199,15 @@
     requestAnimationFrame(loop);
   }
 
+  /* ── fade hero copy/meta before it reaches the header ────── */
+  const heroFade = [$('heroCopy'), document.querySelector('.hero__meta')].filter(Boolean);
+  const fadeOnScroll = () => {
+    const f = Math.max(0, 1 - scrollY / (innerHeight * .55));
+    heroFade.forEach((el) => { el.style.opacity = f.toFixed(3); });
+  };
+  addEventListener('scroll', fadeOnScroll, { passive: true });
+  fadeOnScroll();
+
   /* ── smooth anchors ────────────────────────────────────── */
   document.querySelectorAll('[data-scroll]').forEach((a) => a.addEventListener('click', (e) => {
     const t = document.querySelector(a.getAttribute('href'));
