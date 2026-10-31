@@ -253,7 +253,7 @@ body.ready .hdr { opacity: 1; transform: none; }
 /* toast */
 .toast {
   position: fixed; left: 50%; bottom: 30px; z-index: 80;
-  transform: translate(-50%, 140%);
+  transform: translate(-50%, calc(100% + 40px));
   background: var(--ink); color: var(--bg);
   font-family: var(--mono); font-size: 11px; letter-spacing: .18em; text-transform: uppercase;
   padding: 13px 26px; border-radius: 999px;
