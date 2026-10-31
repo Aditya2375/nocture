@@ -386,3 +386,16 @@ body.ready .hdr { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
   .rv { opacity: 1; transform: none; }
 }
+
+/* mobile scene fit */
+@media (max-width: 900px) {
+  .product__inner { padding: 56px 20px 112px; gap: 14px; }
+  .niche--product { width: min(44vw, 220px); }
+  .product__name { font-size: clamp(34px, 9.5vw, 46px); margin: 8px 0 10px; }
+  .product__desc { font-size: 15px; }
+  .notes { margin: 18px 0; }
+  .notes > div { padding: 8px 0; }
+  .product__buy { margin-bottom: 18px; }
+  .product__buy .btn, .btn { padding: 14px 34px; }
+  .product__nav { bottom: 0; padding: 34px 0 16px; background: linear-gradient(transparent, #050403 55%); }
+}
