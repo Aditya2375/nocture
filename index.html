@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="cur" id="curDot" aria-hidden="true"></div>
+<div class="cur-ring" id="curRing" aria-hidden="true"></div>
 
 <!-- PRELOADER -->
 <div class="loader" id="loader" aria-hidden="true">
@@ -71,7 +73,12 @@
       <h2 class="section-title rv d1">Six ways to <em>dim</em> the world.</h2>
       <p class="section-sub rv d2">Every candle is poured, cured and numbered by hand. Choose one — it burns the way it was made: slowly.</p>
     </header>
-    <div class="shelf" id="shelf"><!-- niches rendered by script.js --></div>
+    <div class="wall" id="wall">
+      <div class="wall__pin">
+        <div class="wall__row" id="wallRow"><!-- niches rendered by script.js --></div>
+        <p class="wall__hint" id="wallHint">Move the light — choose a flame</p>
+      </div>
+    </div>
   </section>
 
   <!-- CRAFT -->
@@ -148,6 +155,8 @@
       <button class="btn" id="addBtn" type="button">Add to bag</button>
     </div>
     <div class="product__stage">
+      <div class="scene-halo" id="sceneHalo"></div>
+      <div class="scene-ghost" id="sceneGhost" aria-hidden="true">Ambre</div>
       <div class="product__stage-glow"></div>
       <figure class="niche niche--product">
         <img src="" alt="" class="niche__img" id="pImg">
