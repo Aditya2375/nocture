@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOCTURE — Slow light for dark rooms</title>
+<meta name="description" content="NOCTURE is a small-batch candle atelier. Six scents poured by hand, composed for the hours after dark.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__word" id="loaderWord"></div>
+  <div class="loader__line"><span id="loaderBar"></span></div>
+</div>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <a class="hdr__brand" href="#top" data-scroll>NOCTURE</a>
+  <nav class="hdr__nav" aria-label="Primary">
+    <a href="#collection" data-scroll>Collection</a>
+    <a href="#craft" data-scroll>Craft</a>
+    <button class="hdr__bag" id="bagBtn" type="button">Bag&nbsp;(<span id="bagCount">0</span>)</button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__glow" id="heroGlow"></div>
+    <div class="hero__stage" id="heroStage">
+      <figure class="niche niche--hero">
+        <img src="hero.jpg" alt="A tall pillar candle burning against pure darkness" class="niche__img" id="heroImg" fetchpriority="high">
+        <figcaption class="sr-only">Ambre Minuit, N°01</figcaption>
+      </figure>
+      <div class="hero__shadow"></div>
+    </div>
+    <div class="hero__copy" id="heroCopy">
+      <p class="label rv">Small-batch candle atelier</p>
+      <h1 class="hero__title">
+        <span class="rv d1">Slow light</span>
+        <span class="rv d2">for dark <em>rooms.</em></span>
+      </h1>
+      <p class="hero__sub rv d3">Six scents poured by hand and composed for the hours after dark. No noise, no excess — wax, wick and patience.</p>
+    </div>
+    <div class="hero__meta rv d4">
+      <span>N°01 — Ambre Minuit</span>
+      <span class="hero__scroll">Scroll<span class="hero__scroll-line"></span></span>
+      <span>EST. MMXXVI</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Poured by hand — Small batch — Soy wax — Cotton wick — 48 hours of light —&nbsp;</span>
+      <span>Poured by hand — Small batch — Soy wax — Cotton wick — 48 hours of light —&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- COLLECTION -->
+  <section class="collection" id="collection">
+    <header class="section-head">
+      <p class="label rv">01 — The collection</p>
+      <h2 class="section-title rv d1">Six ways to <em>dim</em> the world.</h2>
+      <p class="section-sub rv d2">Every candle is poured, cured and numbered by hand. Choose one — it burns the way it was made: slowly.</p>
+    </header>
+    <div class="shelf" id="shelf"><!-- niches rendered by script.js --></div>
+  </section>
+
+  <!-- CRAFT -->
+  <section class="craft" id="craft">
+    <div class="craft__media rv">
+      <img src="craft.jpg" alt="Candles burning beside a bath in a dark room" loading="lazy">
+    </div>
+    <div class="craft__copy">
+      <p class="label rv">02 — The craft</p>
+      <h2 class="section-title rv d1">Poured by hand, <em>numbered</em> by hand.</h2>
+      <p class="rv d2">NOCTURE began with a single question: what does a room feel like at midnight? Each batch is small enough to count, cured for two weeks, and lit once before it leaves the atelier — a candle that has never burned is only a promise.</p>
+      <ul class="stats rv d3">
+        <li><strong>48<span>h</span></strong><span>average burn</span></li>
+        <li><strong>100<span>%</span></strong><span>soy wax</span></li>
+        <li><strong>60</strong><span>candles per batch</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ATMOSPHERE BAND -->
+  <section class="atmos" aria-label="Atmosphere">
+    <img src="atmos.jpg" alt="A candle and a hurricane lamp glowing in a dark panelled room" id="atmosImg" loading="lazy">
+    <blockquote class="atmos__quote">
+      <p class="rv">“A candle is the smallest room you can <em>move into.</em>”</p>
+    </blockquote>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ftr">
+    <div class="ftr__word" aria-hidden="true">NOCTURE</div>
+    <div class="ftr__grid">
+      <div>
+        <p class="label">Collection</p>
+        <a href="#collection" data-scroll>N°01 Ambre Minuit</a>
+        <a href="#collection" data-scroll>N°02 Iris Cendré</a>
+        <a href="#collection" data-scroll>N°03 Santal Obscur</a>
+      </div>
+      <div>
+        <p class="label">Atelier</p>
+        <a href="#craft" data-scroll>The craft</a>
+        <a href="#top" data-scroll>Back to top</a>
+      </div>
+      <div>
+        <p class="label">Note</p>
+        <p class="ftr__note">A concept store — the products shown are fictional. Photography: Unsplash.</p>
+      </div>
+    </div>
+    <div class="ftr__base">
+      <span>© MMXXVI Nocture Atelier</span>
+      <span>Composed after dark</span>
+    </div>
+  </footer>
+
+</main>
+
+<!-- PRODUCT OVERLAY -->
+<div class="product" id="product" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="product__bg" id="productBg"></div>
+  <button class="product__close" id="productClose" type="button" aria-label="Close">Close</button>
+  <div class="product__inner">
+    <div class="product__info">
+      <p class="label" id="pNum">N°01</p>
+      <h3 class="product__name" id="pName">Ambre Minuit</h3>
+      <p class="product__desc" id="pDesc"></p>
+      <dl class="notes">
+        <div><dt>Top</dt><dd id="pTop"></dd></div>
+        <div><dt>Heart</dt><dd id="pHeart"></dd></div>
+        <div><dt>Base</dt><dd id="pBase"></dd></div>
+      </dl>
+      <div class="product__buy">
+        <span class="product__price" id="pPrice"></span>
+        <span class="product__burn" id="pBurn"></span>
+      </div>
+      <button class="btn" id="addBtn" type="button">Add to bag</button>
+    </div>
+    <div class="product__stage">
+      <div class="product__stage-glow"></div>
+      <figure class="niche niche--product">
+        <img src="" alt="" class="niche__img" id="pImg">
+      </figure>
+    </div>
+  </div>
+  <div class="product__nav">
+    <button id="prevBtn" type="button">← Prev</button>
+    <span id="pIdx">01 / 06</span>
+    <button id="nextBtn" type="button">Next →</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<img id="flipGhost" alt="" aria-hidden="true">
+
+<script src="script.js"></script>
+</body>
+</html>
